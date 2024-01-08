@@ -1,0 +1,12 @@
+/* Aplicar css sin instalacion ni dependencia, a traves de css modules.
+  Se utiliza usando la instruccion
+  
+-- import styles from '[...]/home.module.css' ---
+
+  y luego se accede a las clases definidas aqui adentro a traves de la notacion '.'
+
+  x Ej: 
+
+  <div className={styles.elNombreDeLaClase}></div>
+
+*/
