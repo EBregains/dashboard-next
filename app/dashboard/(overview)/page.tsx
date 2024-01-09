@@ -1,10 +1,15 @@
 import { Suspense } from "react";
-import { fetchCardData, fetchLatestInvoices } from "../lib/data"
-import CardWrapper, { Card } from "../ui/dashboard/cards";
-import LatestInvoices from "../ui/dashboard/latest-invoices";
-import RevenueChart from "../ui/dashboard/revenue-chart";
-import { lusitana } from "../ui/fonts";
-import { CardsSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from "../ui/skeletons";
+import { fetchCardData, fetchLatestInvoices } from "@/app/lib/data"
+import CardWrapper, { Card } from "@/app/ui/dashboard/cards";
+import LatestInvoices from "@/app/ui/dashboard/latest-invoices";
+import RevenueChart from "@/app/ui/dashboard/revenue-chart";
+import { lusitana } from "@/app/ui/fonts";
+import { CardsSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from "@/app/ui/skeletons";
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Overview',
+};
 
 export default async function DashBoardPage() {
 
