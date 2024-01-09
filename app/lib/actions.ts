@@ -70,7 +70,7 @@ export async function createInvoice(prevState: State, formData: FormData) {
   redirect('/dashboard/invoices');
 }
 
-export async function updateInvoice(id:string, formData: FormData) {
+export async function updateInvoice(id:string, prevState: State, formData: FormData) {
 
      // Validate form using Zod
      const validatedFields = UpdateInvoice.safeParse({
